@@ -1,0 +1,104 @@
+Warrior:
+Absolute and lower rank Deep Thrust has Counter Attack, gets replaced by Severing Thrust magnus skill
+Absolute and lower rank Chopping Kick has Counter Attack
+Absolute and lower rank Charging Thrust has Speed Attack
+
+Sorceress:
+Prime, Absolute and lower rank Midnight Stinger has Speed Attack
+Prime, Absolute and lower rank Rushing Crow hs Speed Attack
+Absolute and lower ranks of Dark Flame has Speed Attack (But not Prime)
+Prime, Absolute and lower rank Crow Flare has Counter Attack
+Prime Violation has Counter Attack
+Awakening Violation has Counter Attack
+Awakening Blade of Darkness has Counter Attack
+
+Ranger:
+Absolute and lower rank Pinpoint has Counter Attack
+Absolute and lower rank Dagger of Protection has Counter Attack
+
+Berserker: 
+Prime, Absolute and lower rank Fierce Strike has Counter Attack
+Absolute and lower rank Tackling Rock has Counter attack (but not Prime)
+Absolute and lower rank Headbutt has Counter Attack
+Prime and lower rank Lava Piercer has Speed Attack
+
+Tamer:
+Absolute and lower rank Flash has counter attack
+Absolute and lower rank Tree Climb has Counter attack
+
+Musa:
+Absolute and lower rank Blind Thrust has Counter Attack
+Prime, Absolute and lower rank Blind Slash has Counter Attack
+Prime, Absolute and lower rank Carver has Speed Attack
+Absolute and lower rank Blunt Kick has Counter Attack (replaced by Magnus skill)
+
+Maewah
+Prime, Absolute and lower rank Blind Thrust has Counter Attack
+Prime, Absolute and lower rank Blind Slash has Counter Attack
+Absolute and lower rank Carver has Speed Attack (Prime does not)
+Absolute and lower rank Blunt Kick has Counter Attack (replaced by Magnus skill)
+
+Valkyrie:
+Absolute and lower rank Charging Slash has Speed Attack
+Absolute and lower rank Sharp Light has Counter Attack
+Absolute and lower rank Righteous Charge has Speed Attack
+Prime, Absolute and lower rank Just Counter has Counter Attack
+Awakening Sancrum Ferit has Counter attack.
+Awakening Hastiladium has Speed Attack.
+
+Wizard:
+Absolute and lower rank Dagger Stab has Counter Attack.
+
+Witch:
+Absolute and lower rank Dagger Stab has Counter Attack.
+
+Ninja:
+Prime, Absolute and lower rank Fatal Blow has Counter Attack.
+Prime, Absolute and lower rank Heart Aiming has Counter Attack.
+
+Kuno:
+Prime, Absolute and lower rank Fatal Blow has Counter Attack.
+Absolute and lower rank Heart Aiming has Counter Attack.
+Kunai Stab has Counter Attack.
+
+Dark Knight:
+None.
+
+Striker: 
+None.
+
+Mystic:
+None.
+
+Lahn:
+Eyes of Blood Rabam has Counter Attack.
+
+Archer:
+Ravenous Talon has Counter Attack. 
+
+Shai:
+None.
+
+Guardian:
+None.
+
+Hashashin:
+None.
+
+Nova:
+None.
+
+Sage:
+None.
+
+Corsair:
+None.
+
+Drakania:
+None.
+
+Woosa:
+None.
+
+Maegu:
+None.

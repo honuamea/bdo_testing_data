@@ -1,0 +1,601 @@
+
+TODO LIST
+=========
+
+* [Complete] Do skill modifiers apply below DR breakpoint?
+  - Yes, absolutely
+
+* [Complete] Is BDO Codex DR accurate?
+  - Probably (confirmed at Mirumok; 333)
+  - Blind test: Manshaum
+    + Warrior: 342-350
+    + Actual from BDO Codex: 345
+  - Blind test: Turos
+  - Blind test: Ahibs
+  - Blind test: Sherekhan
+  - Confirmed, though it can be hard to tell which mob
+    + Loot tables are the best confirmation, followed by titles
+    + Anything else (even location) is not guaranteed (eg Okjinsini)
+
+* [Complete] Does damage scale from your auto-attack/normal?
+  - Confirmed NO. 100% is 100% given same AP.
+  - AP: 176 sheet (307 total); V Blackstar, V Debo Neck
+  - Striker:
+    + Basic Attack (697%): 105-109
+    + Adamantine(675%): 206-214; 102-107
+    + 'Damage reduced during cooldown' = ~50%
+    + Basic attack w/306: 1877-1970
+    + Adamantine crit w/306 (680):
+      > 3813, 3844, 3813, 3836, 3883, 3720, 3747, 3861, 3770, 3821
+      > 3720-3883 (avg 3811)
+  - Mystic:
+    + Basic Attack (760%): 114-118
+    + Adamantine (675%): 205-213; 112-118
+    + Basic attack w/306: 2070-2172
+    + Adamatine crit w/306 (680): 
+      > 3858, 3738, 3780, 3839, 3887, 3776, 3840, 3896, 3765, 3757
+      > 3738-3896 (avg 3814)
+* [Duplicate] Does skill percent scale off of r10 auto-attack?
+  - Hypothesis #1: 100% is 100%, regardless of class
+  - Hypothesis #2: Classes have a hidden base damage, but 100% is 100% within the class.
+
+* [Complete] Does species damage apply below DR breakpoint?
+  - Hypothesis: No
+  - Kind-of:
+    + Some species damage applies to DR breakpoint (not 100%)
+    + Actual species DAMAGE only applies past breakpoint
+  - Future work: what happens if species damage is what pushes
+    you over the DR breakpoint?
+
+* [Complete] What scaling is applied to species damage above DR breakpoint?
+  - Hypothesis: 0.85
+  - Test w/human damage (armor) @Abandoned Monastery
+  - Scaling is 14.2 compared to normal 16.6 of AP, or ~0.85
+
+* [Complete] How much AP is added for A vs A+ ranks
+  - Hypothesis: +5 (A), +7 (A+) for +12 total
+  - Confirmed by Phelsong
+  - Needs double confirmation
+  - ZERO - Knowledge does not change damage ranges
+    + Double-confirmed at both Ronaros (C vs A) & Mirumok (C vs S)
+
+* [Complete] Does Shai apply -10% or -35 DR with Florang?
+  - Hypothesis: -35 DR
+  - Confirmed (Fadus): -35 DR, not -10%
+  - At Calpheon Elvia (Giants), seems to be -45
+    + Future work: Needs additional testing
+
+* [Complete] How do AP caps function?
+  - Hypothesis: Caps (sheet) AP at the area cap
+  - Clear cap confirmed at Fadus
+  - Hard caps at specific total AP
+  - Monster AP counts are regular AP for caps
+  - Species damage applies over cap
+
+* [Reject] Is BDO Codex evasion correct
+  - Test Gyfin Rhasia (lower) Flamen (720)
+  - BDO Codex is based on a leak from Nov 2021. Any/all data can be outdated.
+  - We've also found evidence that Codex DRs are...off.
+
+* [Complete] Does species damage scale w/skill percent?
+  - Yes, absolutely
+
+* [Complete] Do awk/succ specs change damage at same AP?
+  - Technically no. 100% for same AP is the same regardless
+  - But also kind of. A fraction of Awk/Mainhand AP applies to the other spec, boosting AP. This *is not* captured on the stats page.
+
+* [Complete] Confirm skill percent scales properly above DR breakpoint
+  - Confirmed w/full curve at Waragons (0 DR)
+
+* [Complete] Test damage at AP-capped spot
+  - Confirmed cap at Fadus
+
+* [Complete] Test full AP range at low DR, high HP spot
+  - Gatekeepers!
+  - Waragons/Basis/Shultz (IF not AP-capped)
+
+* [Complete] Test AP ranges below DR breakpoint
+  - Expected: range will widen as AP range widens, despite base damage
+  - Below DR breakpoint, only base damage (0.05*AP) applies.
+  - AP rolls still happen, but few show more than 1 point of difference due to the 0.05 coefficient.
+
+* [Complete] Confirm AP softcap at Basis (240 DR; estimated 490 softcap)
+  - 255 DR; 322 softcap
+
+* [Complete] Test human damage at Sausans
+
+* [Complete] What happens if species damage is what pushes
+  you over the DR breakpoint?
+  - Does the complete species damage apply, or just leftover?
+  - Species applies to AP as rand(0.7, 1.0)*AP. If below DR breakpoint, it applies towards the breakpoint.
+  - Only leftover species damage over the DR breakpoint adds to damage.
+    + 240 AP + 10 species damage vs 247 DR will apply 0-3 extra points of damage
+
+* [Complete] Confirm that species damage DOES NOT apply twice (eg Kama & all-species)
+  - Species damage only applies once
+
+* [Complete] Test Kutum damage damage bug (always min roll) w/Striker & Mystic
+  - Confirmed -2 applies on other classes
+
+* [Complete] Test weapon damage ranges
+  - Need to control for species damage (Ultimate Green recommended)
+  - Identified weapon dies for most weapon AP ranges
+
+* [Complete] Does Mainhand add damage to Shai Talent skills?
+  - Yes. Confirmed at Waragons (2400 -> 2900 damage from florang switch)
+  - Future work: Could use exact % testing
+
+* [Complete] Does BDO replace the unarmed weapon die or add another?
+  - BDO adds another die, based on probability distributions
+  - This site is your best friend: http://topps.diku.dk/torbenm/troll.msp
+
+* [Complete] How does DR shred work?
+  - It subtracts from enemy DR as expected. This lowers the DR breakpoint, but NOT the softcap. The net effect is X 'true damage', scaling 1:1 over DR breakpoint, where -X DR was the shred.
+  - Does it apply over softcap?
+    Yes. Softcaps are AP, not EAP. DR shred ignores softcap entirely.
+
+* How does mainhand AP towards Awakening or Awakening AP towards Succ work (for non-Shai)?
+
+* How do Elvia weapons work?
+  - What about elemental weakness?
+
+* How do Elvia Orcs lights work?
+
+* How do Gyfin buffs work?
+
+* Damage calculator is off by 1 DR for ultra-low Waragons
+  - Estimated at 1 DR otherwise
+
+* How do crits work?
+  - Is it just +100% damage (+ modifiers)?
+  - Confirm crit rate boost per 'Critical Hit' level
+
+* Do -DP Addons work the same as DR shred?
+
+* Does Shai have an automatic -50% PvP damage modifier (on top of class vs class modifiers) that other classes don't have?
+
+* What does 'max <N> hits' mean in skill descriptions?
+
+* Formula for 1 AP vs 1% Crit Damage vs 1% Crit Chance
+
+* Orcs AP cap is 320? (CM info)
+
+
+NOTES / TESTS
+=============
+
+Basic Crit Testing
+------------------
+
+Swing-Swing:
++3% crit dmg from 1 Starlit Ring
++3% crit dmg from Garmoth's heart
++1% all special-attack (class)
+Normal: 2853-2946
+Crit: 5931-6051
+Mult: 2.079-2.054
+
+Talent Damage Testing
+---------------------
+
+482/492 Main/Talent + 102 monster ap
+281 mainhand, 285 talent sheet AP
+
+Try This (1122%x14):
+4017-4085 (100% crit)
+
+Forest's Echoes (1312%x16):
+2334-2415 - 16 numbers, 4 0's
+base 177.9 - 184.1
+0's match 'IMMUNE' messages --> CC attempts
+
+Sun's (1312x7): 6 hits; 2339-2413
+178.2-183.9
+Earth's (1204x7): 6 hits; 2150-2200
+178.6-182.7
+
+
+
+
+
+TODO SPOTS
+==========
+
+Balenos
+-------
+
+Sycraia Upper
+Sycraia Lower
+
+Calpheon
+--------
+
+Pirates
+Star's End
+Ash Forest
+[X] Abandoned Monastery
+Padix
+
+Mediah
+------
+
+[X] Sausans
+Helms (hardcap)
+Lower Helms
+Manes (hardcap)
+Rogues (hardcap)
+Shultz (0 species)
+Abandoned Iron Mine
+Marni's 2nd Lab
+Kratuga
+
+Valencia
+--------
+
+Cadry
+Bashims
+Desert Nagas
+Desert Fogans
+Crescents
+Pila Ku
+Roud
+Gahaz
+Aakman
+Hystria
+[X] Waragons
+[X] Basilisks
+
+Kama
+----
+
+Ronaros
+Mirumok (0 species)
+Gyfin Upper
+Gyfin Lower
+Polly's
+[X] Manshaums
+Navarne
+
+Drieghan
+--------
+
+Sherekhan (0 species)
+Blood Wolves
+Tshira
+
+O'dylita
+--------
+
+Ahibs (0 species)
+Oluns
+[X] Turos
+
+Mountain of Eternal Winter
+--------------------------
+
+Murrowaks
+Okjinsini
+Tree Spirits (easy)
+Tree Spirits (hard)
+
+Serendia Elvia
+--------------
+
+Swamp Nagas
+Swamp Fogans
+Red Orcs
+Bloody Monastery
+Castle Ruins
+Altar Imps
+
+Calpheon Elvia
+--------------
+
+Rhutums
+Giants
+Saunils
+Hexe
+Trolls
+
+
+NOTES
+=====
+
+08/24/2022
+* Record DR testing on Manshaums
+* Single-blind DR testing on 3 other spots
+* Species AP testing (above and below DR breakpoint):
+  - Kama (Miru)
+  - Human (Abandoned Monastery)
+
+Elvia Weapons are straight damage multipliers:
+Fire -> Electric -> Water -> Fire
+* Neutral: 4.5x
+* Good: 6x
+* Bad: 3.5x
+
+Reduced at party zones:
+* Neutral: 2x
+* Good: 2.5x
+* Bad: 1.5x
+
+
+
+FORMULAS
+========
+
+v1 formula
+----------
+
+* wrong for species damage below DR breakpoint
+
+def roll(die):
+    return randint(1, die)
+
+# Weapons are defined as (die + offset), eg 1d8 - 5
+# Offhands generally just give -2. Oros gives -1. No offhand is 0.
+weapon_offsets = mainhand_offset + offhand_offset
+
+total_ap = ap + monster_ap
+
+hardcap = (cap_multiplier == 0)
+rolled_ap = total_ap + roll(weapon_die) - weapon_offsets
+if hardcap and rolled_ap > ap_cap:
+    rolled_ap = ap_cap
+
+rolled_species = randint(7*species_damage//10, species_damage)
+
+# FIXME: species damage applies towards the DR breakpoint
+#        but does not apply at all unless the roll goes over
+#        the DR breakpoint. This is where v1 is bugged.
+
+eap = max(rolled_ap - enemy_dr, 0)
+
+# ap_cap can be a hard or softcap. No spot seems to have both.
+# Hardcaps are defined by a 0x cap_multiplier.
+over_cap_eap = max(0, eap - ap_cap)
+under_cap_eap = eap - over_cap_eap
+
+# we use floats here for clarity, but everything is likely integers
+# that get divided by 100 to get the unscaled total.
+base_damage = 0.05*rolled_ap
+eap_damage = 0.95*under_cap_eap
+softcap_damage = 0.95*cap_multiplier*over_cap_ap
+species_damage = rolled_species
+
+# floor simulates the integer division
+unscaled_damage = math.floor(
+    base_damage + eap_damage + softcap_damage + species_damage)
+
+scaled_damage = skill_percent*unscaled_damage // 100
+
+v2 formula
+----------
+
+from random import randint
+
+def roll(die):
+    return randint(1, die)
+
+# Weapons are defined as (die + offset), eg 1d8 - 5
+# Offhands generally just give -2. Oros gives -1. No offhand is 0.
+weapon_offsets = mainhand_offset + offhand_offset
+
+pve_ap = ap + monster_ap - weapon_offsets
+pve_ap_roll = pve_ap + roll(weapon_die)
+
+# Species damage applies a random AP from 0.7 to 1.0
+species_ap_roll = randint(7*species_damage//10, species_damage)
+
+# Check if any AP would apply over hard/soft-cap
+overcap_ap = max(0, pve_ap_roll - ap_cap)
+
+# Find the total AP between DR and hard/soft-cap
+# This may be negative if below enemy DR
+undercap_eap = pve_ap_roll - enemy_dr - overcap_ap
+
+# If the AP roll was under DR, apply species towards DR
+if undercap_eap < 0:
+    # eap is negative, so this reduces species correctly
+    species_ap_roll = max(0, species_ap_roll + undercap_eap)
+    undercap_eap = 0  # actual EAP can't go below 0
+
+# This is a weighted average of 0.05(AP) + 0.95(EAP). However,
+# we use all integer multiplication/division to simulate BDO's
+# floor-division.
+base_damage = 5 * pve_ap_roll
+eap_damage = 95 * undercap_eap
+softcap_damage = 95 * cap_multiplier*overcap_ap
+
+unscaled_damage = (
+    base_damage + eap_damage + softcap_damage + species_ap_roll)//100
+
+# Finally, we scale by the skill percent, again using only
+# integer multiplication/division
+scaled_damage = skill_percent * unscaled_damage // 100
+
+v3 formula (piecewise)
+----------------------
+
+# Always
+from random import randint
+
+def roll(die):
+    return randint(1, die)
+
+# Weapons are defined as (die + offset), eg 1d8 - 5
+# Offhands generally just give -2. Oros gives -1. No offhand is 0.
+weapon_offsets = mainhand_offset + offhand_offset
+
+pve_ap = ap + monster_ap - weapon_offsets
+pve_ap_roll = pve_ap + roll(weapon_die)
+
+# Species damage applies a random AP from 0.7 to 1.0
+species_ap_roll = randint(7*species_damage//10, species_damage)
+
+Case #1: pve_ap_roll < enemy_dr
+ap_gap = enemy_dr - pve_ap_roll
+damage_ap = 0.05*pve_ap_roll + max(0, species_ap_roll - ap_gap)
+
+Case #2: enemy_dr <= pve_ap_roll <= ap_cap
+eap = pve_ap_roll - enemy_dr
+damage_ap = 0.05*pve_ap_roll + 0.95*eap + species_ap_roll
+          = 0.05*pve_ap_roll + 0.95*(pve_ap_roll - enemy_dr) + species_ap_roll
+          = pve_ap_roll - 0.95*enemy_dr + species_ap_roll
+
+Case #3: pve_ap_roll > ap_cap
+overcap_ap = pve_ap_roll - ap_cap
+undercap_eap = pve_ap_roll - enemy_dr - overcap_ap = ap_cap - enemy_dr
+damage_ap = \
+    0.05*ap_cap + 0.95*undercap_eap + X*overcap_ap + species_ap_roll
+    = 0.05*ap_cap + 0.95*(ap_cap - enemy_dr) + X*(pve_ap_roll - ap_cap) +
+      species_ap_roll
+    = X*pve_ap_roll + (1 - X)*ap_cap - 0.95*enemy_dr + species_ap_roll
+# X can be determined via an 'above softcap' 0-species graph, as per Waragons
+
+v4 formula (piecewise)
+----------------------
+
+# Always
+from random import randint
+
+def roll(die):
+    return randint(1, die)
+
+# Weapons are defined as (die + offset), eg 1d8 - 5
+# Offhands generally just give -2. Oros gives -1. No offhand is 0.
+weapon_offsets = mainhand_offset + offhand_offset
+
+pve_ap = ap + monster_ap - weapon_offsets
+pve_ap_roll = pve_ap + roll(weapon_die)
+
+# Species damage applies a random AP from 0.7 to 1.0
+species_ap_roll = randint(7*species_damage//10, species_damage)
+
+Case #1: 0.95 * pve_ap_roll + species_ap_roll < enemy_dr
+damage = 0.05 * pve_ap_roll
+       *= skill_percent
+
+Case #2: enemy_dr <= 0.95 * pve_ap_roll + species_ap_roll &&
+         pve_ap_roll <= ap_cap
+# Most efficient check (1 extra multiplication):
+# if 20 * (pve_ap_roll - enemy_dr + species_ap_roll) >= pve_ap_roll
+damage = pve_ap_roll - enemy_dr + species_ap_roll
+       *= skill_percent // 100
+
+Case #3: pve_ap_roll > ap_cap
+overcap_ap = max(pve_ap_roll - ap_cap, 0)
+damage = ap_cap + cap_modifier * overcap_ap - enemy_dr + species_ap_roll
+       *= skill_percent // 100
+
+
+DEBUG
+=====
+
+BDO Codex DRs really *are* correct.
+
+
+Case #1 == Case #2 when? (Assume 0 species to make it easier)
+0.05*pve_ap_roll <= pve_ap_roll - enemy_dr
+0.05*pve_ap_roll + enemy_dr <= pve_ap_roll
+enemy_dr <= 0.95 * pve_ap_roll
+pve_ap_roll >= enemy_dr / 0.95 == enemy_dr * 100 / 95
+
+Most efficient check (1 extra multiplication):
+if 20 * (pve_ap_roll - enemy_dr + species_ap_roll) >= pve_ap_roll
+OR (pve_ap_roll - enemy_dr + species_ap_roll) > pve_ap_roll / 20
+
+Can we design a generic formula?
+0.05 * pve_ap_roll + is_breakpoint*(0.95*pve_ap_roll - enemy_dr)
+
+(95 * pve_ap_roll - 100 * enemy_dr) / 100
+(5 * pve_ap_roll + 95 * pve_ap_roll - 100 enemy_dr) / 100
+(5 * pve_ap_roll + 100 * pve_ap_roll - 100 enemy_dr - 5 * pve_ap_roll) / 100
+base_damage = 0.05*pve_ap_roll
+above_dr = pve_ap_roll - enemy_dr - base_damage
+if above_dr > 0  --> pve_ap_roll - enemy_dr > base_damage
+--> pve_ap_roll > base_damage + enemy_dr
+
+
+# Invalid formula: doesn't hardcap AP if multiplier is 0
+damage_ap = \
+    0.05*pve_ap_roll + 0.95*undercap_eap + X*overcap_ap + species_ap_roll
+    = 0.05*pve_ap_roll + 0.95*(ap_cap - enemy_dr) + X*(pve_ap_roll - ap_cap) +
+      species_ap_roll
+    = (0.05 + X)*pve_ap_roll + (0.95 - X)*ap_cap - 0.95*enemy_dr +
+      species_ap_roll
+# where X ~ cap_multiplier
+# at hardcap, X=0:
+    = 0.05*pve_ap_roll + 0.95*(ap_cap - enemy_dr) + species_ap_roll
+# but this is CLEARLY wrong: base damage does not continue to go up past hardcap
+
+Assume a multiplier of 0.5 and (still) a weighted average:
+0.05*pve_ap_roll + 0.95*0.5*(pve_ap_roll - ap_cap)
+= (0.05 + 0.475)*pve_ap_roll - 0.475*ap_cap
+= 0.525 - 0.475*ap_cap
+
+
+DR Testing State-Machine:
+
+0 - 'Know Nothing'
+* Choose an AP and go (first state only)
+* If full AP range matches base damage formula -> 'Below DR'
+* If low AP matches base damage, but high does not -> 'DR Breakpoint'
+* If full AP range > base damage, we don't know if we're in EAP range or Softcap -> 'Above DR'
+
+1 - 'Find DR: Below'
+* Choose a higher AP and go (bisect if possible)
+* If full AP range matches base damage formula -> Stay 'Below DR'
+* If low AP matches base damage, but high does not -> 'DR Breakpoint'
+* If full AP range > base damage, we don't know if we're in EAP range or Softcap -> 'Above DR'
+
+2 - 'Find DR: Above' 
+* Bisect downwards, as we can't calculate softcap yet.
+
+3 - 'Find DR: Breakpoint'
+* Find the exact spot where 1 AP triggers the gap from base -> EAP formula
+  - Min roll first crosses over to EAP range
+  - Max roll first crosses over to EAP range
+* We know the weapon dice, and can use this to find the spot w/min/max rolls
+* On finding the exact DR -> 'Find Softcap: Guess'
+
+4 - 'Found DR' / 'Find Softcap: Guess'
+* We can now evaluate the EAP formula (Case #2)
+* If full AP range matches EAP formula -> 'Find Softcap: Below'
+* If full AP range < EAP damage -> 'Find Softcap: Above'
+* If low AP matches EAP damage but high does not -> 'Softcap Breakpoint'
+
+5 - 'Find Softcap: Below'
+* Bisect upwards
+
+6 - 'Find Softcap: Above'
+* Can't calculate above softcap without softcap modifier
+* Bisect downwards
+
+7 - 'Find Softcap: Breakpoint'
+* We don't narrow in, just find the bounds.
+* Proceed -> 'Find Softcap Reduction'
+
+8 - 'Find Softcap Reduction'
+* Calculate the softcap reduction using values above max + max dice roll
+* Proceed -> 'Pinpoint Softcap'
+
+9 - 'Pinpoint Softcap'
+* Iterate through all possible softcaps until the above-softcap damage numbers match
+
+
+
+
+There will be multiple DR values that match all collected data *until* we zoom in on the exact DR
+It's also possible that we miss some damage values. Below DR breakpoint, we can figure this out by comparing to the actual damage formula.
+  - We should *never* have values outside of the range, or something's wrong with the formula.
+
+
+Damage increase pre-breakpoint will be 0.05*skill_percent/AP
+Damage increase post-breakpoint will be 1.0*skill_percent
+Eg, a 0.83 (or nearly 1 damage/AP) increase for Swing Swing will suddenly become >16 damage/AP after breakpoint
+So being > expected is not enough. We must be > expected by skill_percent (eg 16)
+BUT we still test with 100x1 sometimes. An accumulated increment of 1 here is impossible to tell from 1:1 growth until we see it twice in a row.
+- Must see max(2, 95*skill_percent//10000)
+
+The point at which we see a major increase is actually 1 point *over* DR.

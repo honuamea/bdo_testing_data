@@ -1,0 +1,23 @@
+
+10576-10709
+
+get_damage(ap_value, enemy_dr, ap_cap, cap_modifier, skill_percent, species_ap=0)
+    General damage formula to be used if all input values are known.
+    Applies base damage (5% of AP) below DR breakpoint, EAP damage
+    (AP - DR + species) until any cap, and cap damage
+    (ap_cap + cap_modifier * overcap_ap - enemy_dr + species) above the cap.
+    All damage is then scaled by skill_percent.
+
+677 - 6 = 671
+677 + 2 = 679
+
+>>> dc.get_damage(671, 35, 1000, 1.0, 1663)
+10576.0
+>>> dc.get_damage(679, 35, 1000, 1.0, 1663)
+10709.0
+
+
+653-6 = 647
+653+2 = 655
+
+10177-10310

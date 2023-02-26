@@ -1,0 +1,49 @@
+1135-1277
+
+Absolute: Staff Attack does not get 70/30 split
+
+
+Fireball IV at 91/91 + 25 (1100%) *should* do 913-1045
+But we only see ~765-836. Something is wrong. Even the 70/30 split doesn't account for this.
+This damage drop is regardless of Succ/Awk
+Fireball IV shows the wrong Skill %
+
+Absolute: Earth's Response is fine (correct Skill %)
+
+Ult Katan (91/91 + 25 monster)
+Prime: Earth's Response (Destruction): 1135-1311
+                                       Expected 1135 - 1299
+
+Prime: Earth Arrow III: 1332-1512
+                        Expected 1321-1512
+
+Blackstar
+Prime: Earth's Response (Destruction): 984-1161
+                                       Expected 984-1149
+
+Ult Alloria (196/12?)
+Prime: Earth's Response (Destruction): 2492-2668
+                                       Expected 2489-2653
+
+Max AP Ult Alloria (487/526)
+Prime: Earth's Response (Destruction): 6473-6653
+                                       Expected 6470-6634
+
+Awk (91/91 +25): Ult Katan
+Ad Sphera training: 341-401 (~89.4 unscaled)
+
+Detonative Flow: 692-810 (~89.4 unscaled)
+
+
+Comparison of Mainhand Ranges for Awk:
+Kalis (1d15):
+499-568 (69)
+
+Azwell (1d5):
+495-551 (56)
+
+Test Awk Weapons with different ranges (Dande vs Blackstar)
+
+
+
+Rabams?

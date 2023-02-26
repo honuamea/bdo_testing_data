@@ -1,0 +1,1258 @@
+0 species punch
+---------------
+
+167
+Dawn x2
+Ominous
+Debo Neck
+
+177
+Kutum
+
+190
+Dawn x2
+Ominous x2
+Debo Neck
+
+192
+Dawn x2
+Ominous
+Ruins
+Debo Neck
+
+194
+Dawn x2
+Ruins x2
+Debo Neck
+
+196
+Dawn x2
+Tungy Ring x2
+Debo Neck
+
+197
+Tungy Ear x2
+Ruins
+Turo Belt
+Debo Neck
+
+198
+Tungy Ear x2
+Ominous
+Ruins
+Debo Neck
+
+200
+Tungy Ear x2
+Ruins x2
+Debo Neck
+
+202
+Tungy Ear x2
+Tungy Ring x2
+Debo Neck
+
+204
+Disto
+Tungy Ear
+Ruins x2
+Debo Neck
+
+207
+Dawn x2
+Ominous x2
+Turos
+Debo Neck
+
+214
+Disto
+Dawn
+Ominous x2
+Turos
+Debo Neck
+
+226
+Disto x2
+Ominous x2
+Turos
+Debo Neck
+
+
+239
+Disto x2
+Tungy Ring x2
+Tungy Belt
+Debo Neck
+
+246
+Tungy Belt
+Debo Neck
+Kutum
+
+250
+Dawn x2
+Debo Neck
+Kutum
+
+257
+Disto
+Dawn
+Debo Neck
+Kutum
+
+268
+Dawn x2
+Ominous
+Debo Neck
+Kutum
+
+275
+Disto
+Dawn
+Ominous x2
+Debo Neck
+Kutum
+
+287
+Disto x2
+Ominous x2
+Debo Neck
+Kutum
+
+291
+Dawn x2
+Ominous x2
+Debo Neck
+Kutum
+
+308
+Dawn x2
+Ominous x2
+Turos
+Debo Neck
+Kutum
+
+323
+Disto
+Dawn
+Ominous x2
+Turos
+Debo Neck
+Kutum
+
+328
+Tungy Ear x2
+Ruins
+Ominous
+Tungy Belt
+Debo Neck
+Kutum
+
+
+
+0 species
+---------
+
+To make recipes work: Set 'Skilled Hunter' to rank 0
+
+102:
+Dawn x2
+Old Florang
+
+112:
+Tungy Ear
+Tungy Ring
+Old Florang
+
+123:
+Dawn
+Tungy Neck
+Old Florang
+
+134:
+Ruins
+Debo Neck
+Old Florang
+
+146:
+Dawn
+Ominous
+Debo Neck
+Old Florang
+
+155:
+Dawn x2
+Ominous
+Tungy Neck
+Old Florang
+
+165:
+Dawn x2
+Ominous
+Debo Neck
+Old Florang
+
+177:
+Dawn x2
+Ominous
+Tungy Neck
+Turos
+Old Florang
+
+187:
+Dawn
+Tungy Ear
+Ruins
+Turos
+Debo Neck
+Old Florang
+
+198:
+Disto x2
+Ruins
+Turos
+Debo Neck
+Old Florang
+
+217
+Yuria Florang (Yuria = Human only)
+
+225
+Disto x2
+Tungy Ring
+Ominous
+Turos
+Debo Neck
+Vell's
+Old Florang
+
+
+250
+Disto x2
+Tungy Ring x2
+Tungy Belt
+Debo Neck
+Vell's
+Old Florang
+
+262:
+Disto x2
+Tungy Ring x2
+Tungy Belt
+Debo Neck
+Vell's
+Monster AP artifact
+2x Predation Lightstones
+Old Florang
+
+
+262 (alt):
+Dawn
+Ruins
+Vell's
+Yuria
+<remove journals book>
+
+279
+Disto x2
+Yuria
+
+305
+Disto x2
+Tungy Ring
+Yuria
+
+328
+Kutum
+Yuria
+
+334
+Disto x2
+Ruins x2
+Yuria
+
+337
+Dawn
+Ominous x2
+Tungy Neck
+Yuria
+
+339
+Dawn
+Ominous
+Ruins
+Tungy Neck
+Yuria
+
+341
+Dawn
+Ruins x2
+Tungy Neck
+Yuria
+
+343
+Dawn
+Tungy Ring x2
+Tungy Neck
+Yuria
+
+345
+Dawn
+Ominous
+Tungy Ring
+Debo Neck
+Yuria
+
+347
+Dawn
+Ruins
+Tungy Ring
+Debo Neck
+Yuria
+
+349
+Tungy Ear
+Ruins x2
+Debo Neck
+Yuria
+
+351
+Tungy Ear
+Tungy Ring x2
+Debo Neck
+Yuria
+
+353
+Tungy Ear
+Ruins
+Tungy Belt
+Debo Neck
+Yuria
+
+<235 bracket>
+
+355
+Dawn x2
+Ruins x2
+Tungy Neck
+Yuria
+<remove Akrad Sol>
+
+357
+Dawn x2
+Tungy Ring x2
+Tungy Neck
+Yuria
+<remove Akrad Sol>
+
+362
+Disto
+Ominous
+Tungy Ring
+Debo Neck
+Yuria
+
+363
+Disto
+Ruins x2
+Debo Neck
+Yuria
+
+364
+Disto
+Ruins
+Tungy Ring
+Debo Neck
+Yuria
+
+365
+Dawn x2
+Ruins x2
+Tungy Neck
+Yuria
+
+368
+Tungy Ear
+Ruins x2
+Tungy Neck
+Yuria
+
+370
+Tungy Ear
+Dawn
+Tungy Ring x2
+Tungy Neck
+Yuria
+
+<245 bracket>
+
+381
+Disto
+Dawn
+Ominous x2
+Debo Neck
+Yuria
+
+<249 bracket>
+
+393
+Disto
+Tungy Ear
+Ominous x2
+Debo Neck
+Yuria
+
+<253 bracket>
+
+409
+Disto
+Tungy Ear
+Ruins x2
+Debo Neck
+Yuria
+
+412
+Dawn x2
+Ominous x2
+Turos
+Debo Neck
+Yuria
+
+<257 bracket>
+
+420
+Dawn x2
+Ruins x2
+Turos
+Debo Neck
+Yuria
+<remove Akrad Sol>
+
+427
+Disto x2
+Ruins x2
+Debo Neck
+Yuria
+
+
+490
+Dawn
+Ruins
+Valty
+Tungy Neck
+Kutum
+Yuria
+
+<261 bracket (Kutum)>
+
+
+542
+Ruins
+Ominous
+Tungy Belt
+Debo Neck
+Kutum
+Yuria
+
+<269 bracket (Kutum)>
+
+
+608
+Dawn
+Tungy Ring x2
+Tungy Belt
+Debo Neck
+Vell's
+Kutum
+Yuria
+
+
+672
+Disto x2
+Tungy Ring x2
+Tungy Belt
+Debo Neck
+Vell's
+Kutum
+Yuria
+
+
+
+5+ species
+----------
+
+
+101:
+Base Kzarka
+
+121:
+Base Kutum
+Base Kzarka
+
+141:
+Debo Neck
+Base Kzarka
+
+160:
+Dawn
+Ruins
+Tungy Neck
+Base Kzarka
+
+161 (alt):
++15 Liverto
+
+164:
+Dawn
+Tungy Neck
+Tungy Belt
+Base Kzarka
+
+170:
+Dawn
+Ruins
+Base Kzarka
+
+180:
+Dawn
++15 Liverto
+
+186:
+Ruins
++15 Liverto
+
+190:
+Disto
+Vell's
++15 Liverto
+
+194:
+Dawn x2
++15 Liverto
+
+201:
+Dawn
+Tungy Ring
++15 Liverto
+
+207 (+10 species):
+Tungy Ear
+Dawn
+Ruins
+Tungy Ring
+Tungy Belt
+Base Blackstar
+
+207 (+10 species):
+Disto x2
+Tungy Ring x2
+Turos
+Base Kzarka
+
+215:
+Dawn
+Tungy Neck
++15 Liverto
+
+225:
+Kzarka c0
+
+225 (alt):
+Disto
+Tungy Ear
+Ominous x2
+Debo Neck
+Base Kzarka
+
+234:
+Dawn x2
+Tungy Neck
++15 Liverto
+
+240:
+Tungy Ear
+Dawn
+Ominous
+Ruins
++15 Liverto
+
+240 (alt):
+Kzarka
+
+243:
+Offin
+
+251:
+Ruins x2
+Debo Neck
++15 Liverto
+
+254:
+Dawn
+Kzarka
+
+261:
+Dawn
+Ominous x2
+Tungy Neck
++15 Liverto
+
+262 (elixir):
+Ruins
+Vell's
+Offin
+<remove journals tome>
+Melee Enhancer
+
+264:
+Disto
+Offin
+
+270:
+Dawn
+Ruins x2
+Debo Neck
++15 Liverto
+
+272:
+Tungy Ring
+Vell's
+Offin
+
+276:
+Tungy Ear
+Ruins
+Ominous
+Debo Neck
++15 Liverto
+
+280:
+Ominous
+Dawn
+Offin
+
+280 (#2):
+Tungy Ring x2
+Tungy Ear
+Debo Neck
++15 Liverto
+
+285:
+-Tungy Neck
++Debo Neck
+Kzarka
+
+290:
+Tungy Ear
+Dawn
+Ruins
+Ominous
+Debo Neck
++15 Liverto
+
+291:
+Disto
+Tungy Ear
+Offin
+
+295:
+-Ruins
++Tungy Ring
++Vell's
+Kzarka + Tungy Ring
+
+299:
+Ominous x1
+Dawn x2
+Offin
+
+299 (#2):
+Ominous
+Ruins
+Dawn
+IV Tungy Ear
+Offin c0
+
+305:
+-Dawn x1
++Ruins x1
+Kzarka + Ominous + Dawn + Vell's
+
+310:
+Ruins x2
+Tungy Ear
+Offin
+
+315:
+Disto
+Tungy Ring
+Ruins
+Offin
+
+318:
+Disto
+Ruins
+Tungy Belt
+Offin
+
+<209 bracket>
+
+322:
+Tungy Ear
+Dawn
+Ruins
+Ominous
+Offin
+<swap off +10 monster AP Sol>
+
+326:
+Tungy Ring x2
+Disto
+Offin
+
+327:
+Dawn x2
+Ominous x2
+Offin
+
+329:
+Dawn x2
+Ominous
+Ruins
+Offin
+
+331:
+Dawn x2
+Ruins x2
+Offin
+
+333:
+Dawn x2
+Tungy Ring x2
+Offin
+
+335:
+Tungy Ear
+Ruins
+Tungy Neck
+Offin
+
+337:
+Disto
+Ominous
+Tungy Neck
+Offin
+
+339:
+Disto
+Ruins
+Tungy Neck
+Offin
+
+340:
+-Dawn
+-Disto
++Ruins x2
+Kzarka + Debo Neck
+
+345:
+Tungy Ring x2
+Debo Neck
+Offin
+
+349:
+Ominous x1
+Dawn x2
+Debo Neck
+Offin
+
+350:
+Dawn
+Ominous
+Ruins
+Tungy Neck
+Offin
+
+354:
+Dawn
+Ominous
+Tungy Belt
+Tungy Neck
+Offin
+
+<235 bracket>
+
+362:
+Dawn
+Ominous
+Turos
+Debo Neck
+Offin
+
+369:
+Disto
+Tungy Ear
+Ominous
+Debo Neck
+Offin
+
+374:
+Ruins
+Tungy Ear
+Tungy Belt
+Debo Neck
+Offin
+
+<245 bracket>
+
+380:
+Tungy Ring
+Ominous
+Valty
+Debo Neck
+Offin
+
+386:
+Dawn x2
+Ominous
+Tungy Neck
+Tungy Belt
+Offin
+
+<249 bracket>
+
+393:
+Ruins x2
+Dawn x2
+Tungy Neck
+Offin
+
+398:
+Dawn x2
+Tungy Ring
+Tungy Belt
+Tungy Neck
+Offin
+
+<253 bracket>
+
+409
+Tungy Ring
+Ominous
+Dawn x2
+Debo Neck
+Offin
+
+415
+Dawn x2
+Tungy Ring
+Tungy Belt
+Debo Neck
+Offin
+
+<257 bracket>
+
+427
+Ruins x2
+Tungy Ear
+Dawn
+Debo Neck
+Offin
+
+427 (#2)
+Tungy Ring
+Ruins
+Tungy Ear
+Dawn
+Debo Neck
+Nightfallen Turos
+Offin c0
+
+433
+Disto
+Dawn
+Tungy Belt
+Ominous
+Debo Neck
+Offin
+
+<261 bracket>
+
+449
+Ruins x2
+Disto
+Dawn
+Debo Neck
+Offin
+
+454
+Ominous
+Tungy Ring
+Tungy Belt
+Tungy Ear
+Debo Neck
+Offin
+
+
+<265 bracket?>
+
+477
+Ruins x2
+Disto x2
+Debo Neck
+Offin
+
+495:
+Dawn x2
+Ruins x2
+Turos
+Debo
+Offin
+
+<drops back below 265 by using Kutum>
+
+515
+Disto
+Tungy Belt
+Debo Neck
+Kutum
+Offin
+
+<265 bracket>
+
+539
+Tungy Ring
+Tungy Belt
+Debo Neck
+Vell's
+Kutum
+Offin
+
+<269 bracket>
+
+558
+Dawn x2
+Tungrad Belt
+Debo Neck
+Kutum
+Offin
+
+
+<273 bracket>
+
+570
+Dawn
+Ominous
+Tungy Belt
+Debo Neck
+Vell's
+Kutum
+Offin
+
+<281 bracket>
+
+
+589
+Disto x2
+Tungy Belt
+Debo Neck
+Kutum
+Offin
+
+<289 bracket>
+
+605
+Tungy Ear
+Dawn
+Ominous
+Valty
+Debo Neck
+Kutum
+Offin
+
+619
+Dawn
+Tungy Ear
+Tungy Ring
+Tungy Belt
+Debo Neck
+Kutum
+Offin
+
+644
+Disto x2
+Tungy Ring
+Tungy Belt
+Debo Neck
+Kutum
+Offin
+
+663
+Tungy Ear x2
+Ominous x2
+Tungy Belt
+Debo
+Kutum
+Offin
+
+682
+Offin
+Disto x2
+Tungy Ring x2
+Tungy Belt
+Debo Neck
+Kutum
+
+683 (Blackstar):
+Dawn x2
+Tungy Ring x2
+Valty
+Tungy Belt
+Vell's
+Blackstar
+Kutum
+
+
+Notes:
+* Kzarka + Vell's = Offin; sub accordingly
+  - Offin has a tighter spread
+  - Kzarka has better accuracy
+* Vell's: straight up +3 at any time
+* Earrings provide the most deltas (+1-7, x2)
+  - Dawn: 14
+  - Narc: 15 (8, 0, 0) KDH
+  - Tungy: 17
+  - Disto: 21
+* Rings provide additional tuning (+1-3, x2)
+  - Starlit Ominous: 18
+  - Ruins: 20
+  - Starlit Tungy: 21 (+2% crit)
+    + Can't use w/100% crit testing
+* Belt can avoid AP brackets w/Nightfallen
+  - Turos: 17
+  - Valty: 20
+  - Nightfallen Tungy: 21 (sheet) + 3 (hidden)
+* Neck is a 5 AP down-swing
+  - Tungy: 35
+  - Debo: 40
+* Mainhand is a 3AP up-swing
+  - Kzarka: 134 + 15 monster + (20, 20, 20) KDH
+  - Offin: 137 + 15 monster + (20, 20, 20) KDH
+  - Blackstar: 134 + 48 + (18, 18, 18) KDH
+* Global Labs has 'Eiorah's Tome', which gives +7 AP (journals)
+  - Assume always equipped, unless otherwise stated
+
+
+Human Damage:
+
+Armor: +10 (RBF Cobelinus)
+Helmet: +10 (RBF Harphia)
+Boots: +14 (RBF Hystria)
+Gloves: +20 (RBF Viper)
+Awk: +10 (Olucas)
+Mainhand: +16 (RBF Carmae)
+Offhand: +6 (Red Spirit's)
+Total: +86
+
+Giant's Draught offsets -10 Monster AP on Awk
+Vell's offsets Kzarka vs Offin
+
+10:
+Armor
+Ultimate Green w/wrong species
+
+20:
+Base Offin (Kzarka will have crystals)
+
+30:
+Armor
+Offin
+
+40:
+Helmet
+Armor
+Offin
+
+50:
+Gloves
+Armor
+Offin
+
+60:
+Helmet
+Gloves
+Armor
+Offin
+
+70:
+Mainhand (Kzarka)+ Vell's
+Boots
+Gloves
+
+80:
+Armor
+Gloves
+Boots
+Kzarka + Vell's
+
+90:
+Helmet
+Armor
+Gloves
+Boots
+Kzarka + Vell's
+
+100:
++Awk + Giant's Draught
+Everything but Offhand
+Vell's
+
+106:
++Offhand
+Everything
+Giant's Draught
+Vell's
+
+
+
+
+Deprecated sets:
+-----------------
+
+161:
++15 Liverto
+
+280:
+Tungy Neck
+Kzarka
+
+291:
+-Debo Neck
++Tungy Ring
++Ruins
+Kzarka
+
+299:
+-Tungy Ring x2
++Ominous x1
++Dawn x2
+Kzarka + Vell's
+
+310:
++Ruins x1
++Tungy Ear x1
+Kzarka + Ruins + Vell's
+
+315:
++Disto x1
++Tungy Ring x1
+Kzarka + Ruins + Vell's
+
+326:
++Tungy Ring
+Kzarka + Vell's + Tungy Ring + Disto
+
+335:
+Disto
+Dawn
+Debo Neck
+Kzarka
+
+345:
+-Ruins x2
++Tungy Ring x2
++Vell's
+Offin + Debo Neck
+
+349:
+-Tungy Ring x2
++Ominous x1
++Dawn x2
+Kzarka + Debo Neck + Vell's
+
+350:
++Ominous
+Kzarka + Debo Neck + Ominous + Dawn
+
+362:
++Ruins
+Kzarka + Debo Neck + Ominous + Dawn
+
+369:
++Disto
+Kzarka + Debo Neck + Ominous + Ruins
+
+374:
+Ruins x2
+Tungy Belt
+Kzarka + Debo Neck
+
+380:
++Tungy Ring x2
++Valty
+Kzarka + Debo Neck
+
+386:
++Dawn x2
++Tungy Neck
++Tungy Belt
+Kzarka + Tungy Ring
+
+393:
++Ruins x2
++Tungy Ear
+Kzarka + Tungy Neck + Dawn
+
+399:
++Debo Neck
++Dawn
++Tungy Belt
+Kzarka + Dawn + Ruins
+
+409
++Tungy Ring x2
+Kzarka + Debo Neck + Dawn x2
+
+415
++Tungy Ear
++Tungy Belt
+Kzarka + Debo Neck + Tungy Ring + Dawn
+
+427
++Ruins x2
++Tungy Ear x2
+Debo Neck
+Kzarka
+
+433
++Disto
++Tungy Belt
++Ominous
+Kzarka + Debo Neck + Tungy Ear
+
+449
++Ruins x2
+Kzarka + Debo Neck + Disto + Tungy Ear
+
+455
++Tungy Ring
++Ominous
++Tungy Belt
+Kzarka + Debo Neck + Disto
+
+474
+Ruins x2
+Disto x2
+Debo Neck
+Kzarka
+
+
+spotbreaker standard:
+1) 324: Azwell + Kutum
+2) [374]: +Debo
+3) 430: +2 Ominous
+4) [402]: -1 Ominous
+5) 412: Swap Ominous for double Dawn
+6) 426: Swap Dawn for Omnious
+7 [428]: Acc -> Double Tungy Ear
+

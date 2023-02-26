@@ -1,0 +1,15 @@
+Expected (no buff):
+296-302
+
+Expected (buff):
+592-605
+
+592-605
+
+783 + -35 DR
+
+Butcher DR breakpoint: 579 - 582
+
+Butcher buff appears to be 8-10x (very likely 10x)
+27-2800 -> 32000
+5000 damage even during wakeup (normally mid 500's)

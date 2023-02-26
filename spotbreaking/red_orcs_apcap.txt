@@ -1,0 +1,50 @@
+134
+106-113
+159-169 back
+
+161-170
+without: 160-169
+
+
+get_ap_range(ap_value, attack_dice, gear_offsets, species_damage=0)
+
+Orcs Blackstar
+867 (860-870)
+4464-4567
+
+4461-4571
+
+
+817+50 = 867 -> 897
+4475-4586
+
+897 (890-900)
+4470-4589
+
+
+get_damage(ap_value, enemy_dr, ap_cap, cap_modifier, skill_percent, species_ap=0)
+
+cap
+849-870
+
+
+for apcap in range(849, 871):
+    print(f"AP cap: {apcap}")
+    min1 = dc.get_damage(860, 600, apcap, 0.05, char.skill_percent, species_ap=12)
+    max1 = dc.get_damage(870, 600, apcap, 0.05, char.skill_percent, species_ap=18)
+    print(f"860-870: {min1}-{max1}")
+    min2 = dc.get_damage(890, 600, apcap, 0.05, char.skill_percent, species_ap=12)
+    max2 = dc.get_damage(900, 600, apcap, 0.05, char.skill_percent, species_ap=18)
+    print(f"890-900: {min2}-{max2}")
+    
+
+
+
+Lights
+375 - no?
+381 - yes? (375-383)
+base + 1 dawn
+no lights: 311-318 (matches below DR perfectly)
+with lights: 432-537
+
+350 DR (-250 DR)

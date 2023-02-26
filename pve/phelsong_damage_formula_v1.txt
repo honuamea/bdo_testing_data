@@ -1,0 +1,68 @@
+
+
+deficiency = monster_dr - your_ap  # within +/- 9; always positive here
+(species - deficiency/2)*2 + deficiency/2
+
+2*species - deficiency/2
+
+
+# assuming damage_random is < 0
+# hd_temp is >0 if species_damage > damage_random/2  # (half the AP deficiency)
+hd_temp = species_damage + damage_random/2
+
+species_random = 2(species_damage + damage_random/2) - damage_random/2
+               = 2*species_damage + damage_random - damage_random/2
+               = 2*species_damage + damage_random/2   # 2x species - half the deficiency
+
+# for low species damage, we just get species_damage/2
+
+# replacements for readability
+base_damage = total_ap + species_damage
+damage_random ~= total_ap - enemy_dr  # within a +/-9 range
+ap_gap = -damage_random = enemy_dr - total_ap  # when damage_random < 0
+
+
+# case 1: Total AP higher than opponent DR within range (damage_random > 0; no ap_gap)
+e_ap_random = damage_random + 2*species_damage
+damage = 0.8*(skill_percent*e_ap_random + total_ap + species_damage)
+damage = 0.8*(skill_percent*(damage_random + 2*species_damage) + total_ap + species_damage
+damage = 0.8*(base_damage + skill_percent*(total_ap + 2*species_damage - enemy_dr))
+
+
+# case 2: Total AP < opponent DR (within range); species damage > (3*ap_gap/4)
+hd_temp = species_damage - ap_gap/2
+species_ap_random = 2*hd_temp + ap_gap/2
+                  = 2*(species_damage - ap_gap/2) + ap_gap/2
+                  = 2*species_damage - ap_gap/2
+e_ap_random = species_ap_random - ap_gap
+            = 2*species_damage - ap_gap/2 - ap_gap
+            = 2*species_damage - 3*ap_gap/2
+# e_ap_random > 0 if species_damage > 3*ap_gap/4
+damage = 0.8*(skill_percent*e_ap_random + total_ap + species_damage)
+damage = 0.8*(base_damage + skill_percent*(2*species_damage - 3*ap_gap/2))
+damage = 0.8*(base_damage + skill_percent*(2*species_damage - 1.5*(enemy_dr - total_ap)))
+damage = 0.8*(base_damage + skill_percent*(1.5*total_ap + 2*species_damage - 1.5*enemy_dr))
+
+
+# case 3a: Total AP < opponent DR (within range); (3*ap_gap/4) > species damage > (ap_gap/2)
+e_ap_random = 2*species_damage - 3*ap_gap/2
+# e_ap_random < 0 since species_damage < 3*ap_gap/4 (inverse of case #2)
+damage = 0.8*(self.total_ap + species_ap_random)
+damage = 0.8*base_damage
+
+
+# case 3b: Total AP < opponent DR (within range); species damage < (ap_gap / 2)
+hd_temp = species_damage - ap_gap/2  # <0
+species_ap_random = species_damage / 2
+e_ap_random = species_ap_random - ap_gap
+            = species_damage/2 - ap_gap
+# e_ap_random > 0 iff species_damage > 2*ap_gap
+# but we know species_damage < ap_gap/2, so this case is ALWAYS negative
+damage = 0.8*(self.total_ap + species_ap_random)
+damage = 0.8*base_damage
+
+
+# cases 3a & 3b can simply become case 3 since both have the same damage result
+# case 3: Total AP < opponent DR (within range); species damage < (3*ap_gap/4)
+damage = 0.8*(self.total_ap + species_ap_random)
+damage = 0.8*base_damage

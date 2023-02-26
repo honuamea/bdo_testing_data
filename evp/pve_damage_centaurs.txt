@@ -1,0 +1,128 @@
+
+Seeker:
+* Swipe 300% (402-405)
+* Stab 500% (670-675)
+
+
+0 DR vs Centaurus Seeker
+3480
+3078 (swipe)
+3353 (heal)
+2948 (swipe)
+3480 (heal)
+3075 (swipe)
+3350 (heal)
+2948 (swipe)
+2950 (regen)
+3225 (heal)
+2820 (swipe)
+3095 (heal)
+2690 (swipe)
+2967 (heal)
+2565 (swipe)
+2840 (heal)
+2438 (swipe)
+2990 (heal)
+2588 (swipe)
+2183 (swipe)
+2735 (heal)
+2065 (stab)
+2892 (heal)
+2222 (stab)
+2497 (heal)
+1827 (stab)
+2503 (heal)
+2098 (swipe)
+1696 (swipe)
+2248 (heal)
+1843 (swipe)
+2118 (heal)
+1716 (swipe)
+1993 (heal)
+1318 (stab)
+1717 (heal)
+1042 (stab)
+2270 (heal)
+1865 (swipe)
+1460 (swipe)
+
+[402, 405, 405, 402, 405, 405, 402, 402, 402, 405, 670, 670, 670, 405, 402, 405, 402, 675, 675, 405, 405]
+134 or 135 AP --> 402/405 & 670/675
+
+
+With Skill armor:
+3480
+2475 (stab)
+3426 (heal)
+2886 (swipe)
+3438 (heal)
+3036 (swipe)
+3311 (heal)
+2951 (swipe)
+3228 (heal)
+2553 (stab)
+3235 (heal)
+2830 (swipe)
+2428 (swipe)
+3255 (heal)
+2895 (swipe)
+3447 (heal)
+2847 (swipe)
+3480 (heal)
+3120 (swipe)
+3480 (heal)
+3123 (swipe)
+3398 (heal)
+3041 (swipe)
+3318 (heal)
+2718 (stab)
+3270 (heal)
+2265 (stab)
+2950 (heal)
+2545 (swipe)
+2415 (swipe)
+2690 (heal)
+2285 (swipe)
+2566 (heal)
+2164 (swipe)
+2716 (heal)
+2359 (swipe)
+2911 (heal)
+2551 (swipe)
+3103 (heal)
+2433 (stab)
+2713 (heal)
+2308 (swipe)
+2589 (heal)
+2187 (swipe)
+2739 (heal)
+2144 (stab)
+2419 (heal)
+2014 (swipe)
+2023 (heal)
+1621 (swipe)
+2723 (heal)
+2363 (swipe)
+3467 (heal)
+3107 (swipe)
+3480 (heal)
+2805 (stab)
+3480 (heal)
+2805 (stab)
+3480 (heal)
+3120 (swipe)
+
+
+
+def calc(a):
+    ret = []
+    prev = None
+    for line in a.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        dmg = int(line.split()[0])
+        if prev is not None:
+            ret.append(prev - dmg)
+        prev = dmg
+    return ret

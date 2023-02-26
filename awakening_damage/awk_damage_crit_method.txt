@@ -1,0 +1,69 @@
+
+On-Demand:
++3%
++6%
++10%
++13%
++16%
++20%
++23%
++26%
+
++15% (Sharp Detection; 15 min)
++5% (Exquisite Cron; 30 min)
+
+
+X = (crit_dmg)/(crit_bonus) - base_dmg
+AP = (base_dmg + X) / skill%
+   = (base_dmg + (crit_dmg)/(crit_bonus) - base_dmg)) / skill%
+   = crit_dmg / (crit_bonus * skill%)
+
+damage_range(ap_value, enemy_dr, ap_cap, cap_modifier) method of character.Character instance
+    Returns estimated (min_dmg, max_dmg) for the given 'ap_value',
+    'enemy_dr', 'ap_cap', & 'cap_modifier'
+
+Krea = 1d3 - 2
+Blackstar (?) = 1d12 - 6
+Dande (?) = 1d10 - 5
+
+Ex1:
+285 = 223/223/62 Krea/Blackstar/Kutum
+
+Adjust for Kutum:
+221/221/62 Krea/Blackstar
+
++6 Krea = 34-36 = 33 + 1d3 (35 sheet)
++3 Blackstar = 30-41 = 29 + 1d12 (35.5 sheet)
+Character Die ('Char'): 1d5 - 3
+
+So non-weapon stats (kutum-adjusted) = 186/185.5/62 = 248/247.5
+
+AP Roll = 
+248 + (1d5 - 3) + 0.7 * (33 + 1d3) + 0.3 * (29 + 1d12)
+245 + 23.1 + 8.7 + 1d5 + 0.7*(1d3) + 0.3*(1d12)
+276.8 + 1d5 + 0.7*(1d3) + 0.3*(1d12)
+
+Min roll: 276.8 + 1 + 0.7 + 0.3 = 278.8 - 190 = 88.8
+Min Observed: 88.8
+Anything over 90 is hardcap
+Possible rolls below hardcap (90):
+Char: 1, Krea: 1, Blackstar 1: 88.8
+Char: 1, Krea: 1, Blackstar 2: 89.1
+Char: 1, Krea: 1, Blackstar 3: 89.4
+Char: 1, Krea: 2, Blackstar 1: 89.5
+Char: 1, Krea: 1, Blackstar 4: 89.7
+Char: 1, Krea: 2, Blackstar 2: 89.8
+Char: 2, Krea: 1, Blackstar 1: 89.8
+
+Anything else: hardcapped to 90 --> 1012 damage
+
+Actual observed: 88.8, 89.1, 89.4, 89.5, 89.7, 89.8, 90
+
+Final formula:
+Succ AP = (mainhand_ap - mainhand_weapon_ap + monster_ap) + character_die + 0.7*(mainhand_weapon_ap + mainhand_die) + 0.3*(awakening_weapon_ap + awakening_die)
+Succ AP = mainhand_ap + monster_ap - 0.3*mainhand_weapon_ap + character_die + 0.7*(mainhand_die) + 0.3*(awakening_weapon_ap + awakening_die)
+
+Subtract enemy DR & scale by skill% normally for damage
+
+
+Awk AP = (awakening_ap - awakening_weapon_ap + monster_ap) + character_die + 0.7*(awakening_weapon_ap + awakening_die) + 0.3*(mainhand_weapon_ap + mainhand_die)

@@ -1,0 +1,169 @@
+Weapon  Tooltip Die	Offset
+Unarmed N/A     5       -3
+Offin   136-138 7       -4
+Old     6-10    9       -5
+Kzarka  18-22   9       -5
+Blkstar 22-28   11      -6
+Yuria   122-131 14      -7
+Ain     116-124 13      -7
+
+
+Fadus Striker 742%, hardcap, 120 base damage 20
+994-1038
+
+134-140 - (14, 20) = 120, 120
+
+All testing done at Fadus: 168 DR, 282 hardcap
+
+Distribution visualizer:
+http://topps.diku.dk/torbenm/troll.msp
+
+def parse_prob(text):
+    distributions = {}
+    total = 0
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        roll, counts = line.split(": ")
+        count = len(counts.strip())
+        distributions[roll] = count
+        total += count
+    for roll in sorted(list(distributions.keys())):
+        percent = distributions[roll] * 100 / total
+        print(f"{roll}: {percent:.2f}")
+
+
+
+Sorc
+====
+
+314
+Tungy Belt -> Ork == -4
+Tungy Ring -> IV Ruins == -4
+70
+NOT @hardcap (+3 AP does +3 damage)
+
+314 Amulet
+1298 x 70 = 908
+1557 --> 120 damage
+@hardcap (318 does the same)
+
+
+Ranger
+======
+
+278
+Base damage (kick) = 100-100
+
+326
+Base damage (kick) = 120-120 (hardcap)
+
+278 Longbow
+Abs Dagger (RMB):
+Expected: 700 (700% * base)
+Got: 770-840 == 110-120
+
+Abs Bow Shot (LMB):
+2039-2224 / 1854% == 110-120
+
+Dagger & Bow Show use the same modifier
+Basic melee (Kick) uses something else
+980-1069 / 891% == 110-120
+
+267
+Bow: 1835-2057 / 1854% = 99 - 111
+
+We know 'Old' weapons add 1d5
+99 + 1d13 = 99-111
+97 + 1d5 = 98-103
+97 + 1d5 + 1d9 = 99-111
+
+1d8 = 1-8
+1d9 = 1-9
+2d4 = 2-8
+1d5 + 1d3 = 2-8
+2d5 = 2-10
+
+96 + 1d5 + 2d5 = 99-111
+
+
+Ranger appears to use a 1d8 base die for Ranged. Bow adds 1d5.
+Ranger's Melee die (base kick only) still looks like 1d1 - 6 (ish)
+
+All classes appear to use their class' AP type, rather than anything skill-specific
+
+
+
+Ranger hit distribution (1854-2057):
+1835: 11111
+1854: 11111111
+1872: 1111111
+1891: 1111111111
+1909: 1111111111111
+1928: 111111111111111111
+1946: 11111111111111111
+1965: 111111111111111
+1983: 1111111111111
+2002: 1111111111111
+2020: 11111111
+2039: 1111111
+2057: 111
+
+Distribution looks like 1d5 + 1d9, rather than 3d5
+
+
+Maewa
+=====
+
+332
+Base punch: 120-120
+
+270
+100x1: 104-112
+Probably 2d5
+
+268
+100x1: 102-210
+
+268 Blade
+Slice (LMB): 1060-1187 / 1060% == 100-112
+Stub Arrow (RMB): 742 - 816 / 735% == 101-111
+Cannot confirm full stub arrow range...
+
+271 Blade + Range Enhancer
+1060-1166 / 1060% == 100-110
+742-823 / 735% == 101-112
+No change in either
+
+271 Blade + Melee Enhancer
+1144-1219 / 1060% == 108-115
+764-830 / 735% == 104-113
+
+
+Archer (Ranged): 1d9 - 5
+Berserker (Melee): 1d9 - 5
+Corsair (Melee): 1d9 - 5
+Dark Knight (Magic): 1d9 - 5
+Drakania (Melee): 1d9 - 5
+Guardian (Melee): 1d9 - 5
+Hashashin (Magic): 2d5 - 6
+Kunoichi (Melee): 1d9 - 5
+Lahn (Melee): 1d9 - 5
+Maegu (Magic): 1d9 - 5
+Maewah (Melee): 1d9 - 5
+Musa (Melee): 1d9 - 5
+Mystic (Melee): 1d9 - 5
+Ninja (Melee): 1d9 - 5
+Nova (Melee): 1d9 - 5
+Ranger (Ranged): 1d9 - 5 
+Sage (Magic): 1d9 - 5
+Shai (Melee): 1d5 - 3
+Sorc (Magic): 1d9 - 5
+Striker (Melee): 1d9 - 5
+Tamer (Magic): 1d5 - 3
+Valkyrie (Melee): 1d9 - 5
+Warrior (Melee): 1d9 - 5
+Witch (Magic): 1d9 - 5
+Woosa (Magic): 1d9 - 5
+Wizard (Magic): 1d5 - 3

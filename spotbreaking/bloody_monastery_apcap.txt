@@ -1,0 +1,22 @@
+847 - no cap
+867 - capped (860-870)
+3464-3569
+897 - capped
+3492(88?)-3592 (890-900)
+
+
+get_damage(ap_value, enemy_dr, ap_cap, cap_modifier, skill_percent, species_ap=0)
+
+Only 856 works (same cap as orcs)
+>>> dc.get_damage(860, 660, 856, 0.05, bs.skill_percent, 12)
+3462.0
+>>> dc.get_damage(870, 660, 856, 0.05, bs.skill_percent, 18)
+3570.0
+>>> dc.get_damage(870, 660, 855, 0.05, bs.skill_percent, 18)
+3554.0
+>>> dc.get_damage(870, 660, 857, 0.05, bs.skill_percent, 18)
+3586.0
+>>> dc.get_damage(860, 660, 857, 0.05, bs.skill_percent, 12)
+3478.0
+>>> dc.get_damage(860, 660, 855, 0.05, bs.skill_percent, 12)
+3446.0
